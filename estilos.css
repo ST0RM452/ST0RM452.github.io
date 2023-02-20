@@ -1,0 +1,439 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*** RESETEO PROPIEDADES ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/****** LAYOUT ******/
+/*** DISPLAY/POSITION/FLOAT ***/
+nav img{
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+#ultimasEntradas{
+    position: relative;
+}
+
+#ultimasEntradas #pelis{
+    position: absolute;
+    top: 390px;
+    left: 4%;
+}
+
+#ultimasEntradas #noticias{
+    position: absolute;
+    top: 390px;
+    right: 37%;
+}
+
+#ultimasEntradas #imagen2{
+    float:right;
+}
+
+#tienda{
+    position: relative;
+}
+
+#descripcionTienda article{
+    float: left;    
+}
+
+#sobreNosotros{
+    position: relative;
+}
+
+#sobreNosotros img{
+    position:absolute;
+    top: 150px;
+    right: 340px;
+}
+
+#sobreNosotros h2{
+    position:absolute;
+    top: 250px;
+    right: 465px;
+}
+
+#sobreNosotros #masInformacion{
+    position:absolute;
+    top: 350px;
+    right: 440px;
+}
+
+#sobreNosotros a{
+    position:absolute;
+    top: 450px;
+    right: 620px;
+}
+
+footer{
+    position: relative;
+}
+
+footer #footer1{
+    position: absolute;
+    top:127px;
+    left:87px;
+}
+
+footer #footer2{
+    position: absolute;
+    top:127px;
+    left:165px;
+}
+
+footer #footer3{
+    position: absolute;
+    top:127px;
+    left:237px;
+}
+
+footer #footer4{
+    position: absolute;
+    top:127px;
+    left:317px;
+}
+
+footer #footer5{
+    position: absolute;
+    top:127px;
+    left:397px;
+}
+
+footer #logo{
+    position: absolute;
+    top:83px;
+    left:41.5%;
+}
+
+footer #metodosdepago{
+    position: absolute;
+    top:95px;
+    right:100px;
+}
+
+footer a{
+    position: absolute;
+    top:207px;
+    left:170px;
+}
+
+footer p{
+    position: absolute;
+    top:300px;
+    right:750px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*** HEIGHT(px) / WIDTH(%) / PADDING / BORDER / MARGIN ***/
+
+nav{
+    height: 228px;
+}
+
+nav img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width:15%;
+    height:150px;
+}
+
+nav ul li {
+    margin-top: 15px;
+    padding: 0 40px 27px 40px;
+}
+
+nav ul li a{
+    padding: 10px 10px 10px 10px;
+}
+
+header {
+    width: 100%;
+    height:750px;
+}
+
+header section{
+    padding-top: 320px;
+}
+
+#ultimasEntradas{
+    height: 750px;
+}
+
+#ultimasEntradas img{
+    height: 500px;
+    width: 50%;
+}
+
+#ultimasEntradas h2{
+    padding-top: 40px;
+}
+
+#ultimasEntradas h3{
+    margin-top: 10px;
+   padding-bottom:30px;
+}
+
+#tienda{
+    height: 750px;
+}
+#tienda h2{
+    padding-top: 50px;
+}
+#tienda #descripcionTienda{
+    margin-left: 2.8%;
+}
+#tienda #descripcionTienda article{
+    margin: 80px 1.5% 0px 1.5%
+}
+#tienda #descripcionTienda article img{
+    height: 430px;
+    width: 100%;
+}
+
+#sobreNosotros{
+    height: 700px;
+}
+
+#sobreNosotros img{
+    width:34%;
+    height:400px;
+}
+
+footer{
+    height: 340px;
+}
+
+footer #footer1{
+    width: 3.5%;
+    height: 50px;
+}  
+
+footer #footer2{
+    width: 2.7%;
+    height: 50px;
+}  
+
+footer #footer3{
+    width: 3%;
+    height: 50px;
+}  
+
+footer #footer4{
+    width: 3%;
+    height: 50px;
+}  
+
+footer #footer5{
+    width: 3.8%;
+    height: 50px;
+}  
+
+footer #logo{
+    width:18%;
+    height:120px;
+}
+
+footer #metodosdepago{
+    width: 17%;
+    height: 120px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*** NAV ***/
+nav{
+    background-color:#740303 ;
+    text-align: center;    
+}
+
+nav li a:hover {
+    font-weight: bold;
+    background-color: #6b6b6b56;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    font-size: 115%;
+}
+
+
+/*** HEADER ***/
+header{
+    background-image: url("king-of-martial-arts-wallpaper.jpg"); 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header h1{
+    color:white;
+    font-weight: bolder;
+    font-size: 450%;
+    text-align: center;
+}
+
+/*** MAIN ***/
+
+/*** SECTION ULTIMASENTRADAS***/
+
+#ultimasEntradas{
+    background-color: black;    
+}
+
+#ultimasEntradas h2, h3{
+    color:white;
+    text-align:center;
+}
+
+#ultimasEntradas h2{
+    font-weight: 1000;
+    font-size: 170%;
+}
+
+#ultimasEntradas a{
+    text-decoration: underline;
+    color:white;
+    font-size: 130%;
+}
+
+/*** SECTION TIENDA ***/
+#tienda{
+    background-image: url("fondotienda.png"); 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#tienda h2{
+    color:white;
+    text-align:center;
+    font-weight: bolder;
+    font-size: 250%;
+    text-decoration: underline;
+}
+
+#tienda #descripcionTienda article a{
+   text-decoration: underline;
+    color: white;
+}
+
+#tienda #descripcionTienda article p{
+    color: white;
+}
+
+/*** SECTION SOBRE NOSOTROS ***/
+#sobreNosotros{
+    background-image: url("jigoro-kano_edited_edited_edited_edited.jpg"); 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#sobreNosotros h2{
+    color:black;
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+#sobreNosotros #masInformacion{
+    color:black;
+    font-size: 110%;
+    text-align: center;
+}
+
+#sobreNosotros a{
+    color:black;
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+footer{
+    background-color:#740303 ;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer p{
+    color: white;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
+}
+
+/** RESPONSIVE **/
+/** NAV**/
+/** TABLET **/  
+@media (max-width:952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+/** MOVIL **/
+@media (max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
