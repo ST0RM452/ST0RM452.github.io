@@ -12,12 +12,21 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /****** LAYOUT ******/
 /*** DISPLAY/POSITION/FLOAT ***/
-nav img{
+#menu img{
     display: block;
 }
 
-nav li {
+#menu ul li {
     display: inline-block;
+}
+
+#menu ul li ul{
+    position: absolute;
+    display: none;
+}
+
+#menu ul li ul li{
+    display: block;
 }
 
 #ultimasEntradas{
@@ -44,11 +53,12 @@ nav li {
     position: relative;
 }
 
-#descripcionTienda article{
+#articulosTienda article{
     float: left;    
 }
 
 #sobreNosotros{
+    clear:left;
     position: relative;
 }
 
@@ -139,26 +149,34 @@ footer p{
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*** HEIGHT(px) / WIDTH(%) / PADDING / BORDER / MARGIN ***/
 
-nav{
+#menu{
     height: 228px;
 }
 
-nav img{
+#menu img{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
     padding-top: 30px;
     padding-bottom: 20px;
-    width:15%;
+    width:290px;
     height:150px;
 }
 
-nav ul li {
+#menu ul li {
     margin-top: 15px;
     padding: 0 40px 27px 40px;
 }
 
-nav ul li a{
+#menu ul li ul{
+    margin-top: 8px;
+}
+
+#menu ul li ul li{
+    padding: 10px 45px 10px 45  px;
+}
+
+#menu ul li ul li a{
     padding: 10px 10px 10px 10px;
 }
 
@@ -195,13 +213,13 @@ header section{
 #tienda h2{
     padding-top: 50px;
 }
-#tienda #descripcionTienda{
+#tienda #articulosTienda{
     margin-left: 2.8%;
 }
-#tienda #descripcionTienda article{
+#tienda #articulosTienda article{
     margin: 80px 1.5% 0px 1.5%
 }
-#tienda #descripcionTienda article img{
+#tienda #articulosTienda article img{
     height: 430px;
     width: 100%;
 }
@@ -260,24 +278,37 @@ footer #metodosdepago{
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*** NAV ***/
-nav{
+/*** #menu ***/
+#menu{
     background-color:#740303 ;
     text-align: center;    
 }
 
-nav li a:hover {
+#menu ul li a:hover {
     font-weight: bold;
     background-color: #6b6b6b56;
 }
 
-nav ul li a {
+#menu ul li:hover > ul {
+    background-color: #714f34;
+    display:block;
+    border:2px solid #5c040456;
+}
+
+#menu ul li a {
     color:black;
     text-decoration: none;
     font-size: 115%;
 }
 
-
+#menu ul li ul li a {
+    color:black;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    letter-spacing:1px;
+}
 /*** HEADER ***/
 header{
     background-image: url("king-of-martial-arts-wallpaper.jpg"); 
@@ -333,12 +364,12 @@ header h1{
     text-decoration: underline;
 }
 
-#tienda #descripcionTienda article a{
+#tienda #articulosTienda article a{
    text-decoration: underline;
     color: white;
 }
 
-#tienda #descripcionTienda article p{
+#tienda #articulosTienda article p{
     color: white;
 }
 
@@ -372,6 +403,7 @@ footer{
     background-color:#740303 ;
 }
 
+/*** FOOTER ***/
 footer a{
     color: white;
     text-decoration: underline;
@@ -382,7 +414,7 @@ footer p{
 }
 
 /** RESPONSIVE **/
-/** NAV**/
+/** #menu**/
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -395,20 +427,23 @@ footer p{
 
 #check{
     display:none;
-}
+}  
 
 /** TABLET **/  
-@media (max-width:952px){
-    .enlace{
+@media (max-width:1012px){
+    #enlace{
         padding-left: 20px;
     }
-    nav ul li a{
-        font-size: 16px;
+    #menu ul li {
+        padding: 10px 30px 10px 30px;
+    }
+    #menu ul li a{
+        font-size: 115%;
     }
 }
 
 /** MOVIL **/
-@media (max-width:858px){
+@media (max-width:894px){
     .checkbtn{
         display:block;
     }
@@ -422,12 +457,12 @@ footer p{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    #menu ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    #menu ul li a{
         font-size: 20px;
     }
     li a:hover, li a.active{
@@ -436,5 +471,21 @@ footer p{
     }
     #check:checked ~ ul{
         left:0;
+    }
+
+    header h1{
+        font-size: 350%;
+    }
+}
+
+/** #tienda**/
+@media (max-width:1829px){
+
+    #tienda #articulosTienda #articulo1,#articulo2,#articulo3,#articulo4{
+        width: calc(100% - 80%);    
+    }
+
+    #tienda #articulosTienda #articulo1{
+        margin-left: 4%;
     }
 }
